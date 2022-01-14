@@ -19,11 +19,6 @@ if enable_config('static-stdlib', false)
   $LDFLAGS << ' -static-libgcc -static-libstdc++'
 end
 
-if enable_config('march-tune-native', false)
-  $CFLAGS << ' -march=native -mtune=native'
-  $CXXFLAGS << ' -march=native -mtune=native'
-end
-
 # darwin nix clang doesn't support lto
 # disable -lto flag for darwin + nix
 # see: https://github.com/sass/sassc-ruby/issues/148
