@@ -13,17 +13,12 @@ end
 require 'mkmf'
 
 $CXXFLAGS << ' -std=c++11'
-$CXXFLAGS << ' -march=arm64-darwin -mtune=arm64-darwin'
 
 # Set to true when building binary gems
 if enable_config('static-stdlib', false)
   $LDFLAGS << ' -static-libgcc -static-libstdc++'
 end
 
-if enable_config('march-tune-native', true)
-  $CFLAGS << ' -march=native -mtune=native'
-  $CXXFLAGS << ' -march=native -mtune=native'
-end
 
 # darwin nix clang doesn't support lto
 # disable -lto flag for darwin + nix

@@ -12,7 +12,6 @@
   - [always dispose data context](https://github.com/sass/sassc-ruby/pull/161)
   - [Update libsass to 3.6.3](https://github.com/sass/sassc-ruby/pull/164)
   - [Restore strip symbols](https://github.com/sass/sassc-ruby/pull/184)
-  - [Default --march-tune-native to false](https://github.com/sass/sassc-ruby/pull/158)
   - [Fix compile issue on Mac OS X](https://github.com/sass/sassc-ruby/pull/174)
   - [Test on TruffleRuby in TravisCI](https://github.com/sass/sassc-ruby/pull/171)
   - [Use RbConfig::MAKEFILE_CONFIG['DLEXT'] instead of hardcoding extensions](https://github.com/sass/sassc-ruby/pull/173)
