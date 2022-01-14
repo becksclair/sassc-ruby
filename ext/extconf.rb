@@ -19,7 +19,7 @@ if enable_config('static-stdlib', false)
   $LDFLAGS << ' -static-libgcc -static-libstdc++'
 end
 
-if enable_config('march-tune-native', false)
+if enable_config('march-tune-native', true)
   $CFLAGS << ' -march=native -mtune=native'
   $CXXFLAGS << ' -march=native -mtune=native'
 end
